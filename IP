@@ -1,0 +1,20 @@
+#include<stdio.h>
+float monto(float costo, float iva); //declaración
+float monto(float costo, float iva){
+    
+float miiva, totalapagar;
+miiva=(costo*iva)/100;
+totalapagar= costo-miiva;
+return totalapagar;
+}
+main(){
+float a, b;
+printf ("CALCULO DE PRECIO\n\n");
+printf("Ingresa el costo :");
+scanf("%f", &a);
+printf("Ingresa el IVA :");
+scanf("%f", &b);
+printf(" Total: %f", monto(a,b));
+
+}
+
